@@ -1,0 +1,1 @@
+Our browser needs to display content and sends a request to the server.

@@ -1,0 +1,5 @@
+What happens when you go to a website ?
+
+https -> scheme / protocol
+www -> sub domain
+abc -> domain

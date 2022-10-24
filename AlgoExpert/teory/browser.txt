@@ -1,0 +1,31 @@
+WHAT DO BROWSERS DO WITH OUT HTML
+
+Critical Rendering Path
+1. Parse HTML into DOM tree (request any resources found)
+2. Parse CSS into CSS Object Modal (CSSOM) tree
+3. Combine DOM and CSSOM into render tree
+4. Layout (width, height, location)
+5. Paint
+
+Dynamic Changes
+- color changes = repaint node
+- position changes = reflow + repaint node/siblings
+- major changes = reflow + repaint document
+
+
+Preload scanner
+- Request high priority resources (scripts, stylesheets, fonts) (works during parsing, doesnt wait for parser to find links)
+
+KEY PERFORMANCE METRICS:
+- First Contentful Paint
+- First Meaningful Paint
+- Time to Interactive
+
+Optimizing for Critical Rendering Path
+- Use defer/async scripts
+- Minimize DOM size
+- Reduce file sizes (compression/minifications)
+- Lazy loading - dont request everything at once
+- Hardware accelerated animations:
+  - Add transform: translate3D(0,0,0)
+  - Due to composition, animation handled by GPUU

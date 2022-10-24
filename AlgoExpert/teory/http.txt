@@ -1,0 +1,17 @@
+How do client and server communicate
+
+HTTP: protocol for transmiting hypermedia on the website
+
+- Stateless: one message at a time without memory of previous requests (cookies can be used to create sessions)
+- Usually sent over a TCP connection
+
+GET requests                Post requests
+
+Request line:
+
+GET: method                 POST: method
+
+path: /test/product         content-type: application/json
+version: HTTP/1.1           accept: application/json
+
+Headers: Host, Accept       {"lol":1}

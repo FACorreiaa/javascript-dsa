@@ -1,0 +1,34 @@
+Application Programming interface
+
+RESTful API's
+
+- Representational State Transfer
+- Resource based
+- Set of architectural Constraints
+1. Must follow client - server model
+2. Stateless
+3. Cacheble
+4. Layered System
+5. Uniform interface
+6. Code on demand (optional)
+
+RPC API
+
+- Remote Procedure Call
+- API endpoint represent actions/functions
+
+SOAP API
+
+- Simple Object Access protocol
+- XML formatted request/responses. Extremely verbose, difficult to work with from the frontend
+
+GraphQL
+
+- Query language for API's
+- No extra data returned by server
+
+API Keys
+
+- Unique identifier for your application
+- Used on public APIs for track
+- sent with each request
